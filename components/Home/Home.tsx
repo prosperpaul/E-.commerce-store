@@ -2,7 +2,7 @@ import React from 'react'
 import { FaAngleDown, FaArrowRight, FaArrowUp, FaLinkedinIn, FaRegCopyright } from "react-icons/fa";
 import { IoIosSearch, IoLogoInstagram, IoMdHeartEmpty, IoMdSend } from 'react-icons/io';
 import { IoCartOutline } from 'react-icons/io5';
-import { PiDesktopLight, PiGooglePlayLogo, PiHeadphones, PiHeartStraightThin } from 'react-icons/pi';
+import { PiDesktopLight, PiHeadphones, PiHeartStraightThin } from 'react-icons/pi';
 import Image  from 'next/image'
 import { AiOutlineApple } from 'react-icons/ai';
 import { RxBorderDotted } from 'react-icons/rx';
@@ -56,11 +56,11 @@ const Home = () => {
     <div className='flex justify-around m-7 text-sm font-bold '>
         <div className='gap-2'>
             <div className='flex gap-10 '>
-            <p>Woman's Fashion</p>
+            <p>Woman&apos;s Fashion</p>
             <LiaGreaterThanSolid className='mt-1 font-bold ' />
             </div>
         <div className='flex gap-10 '>
-        <p>Men's Fashion</p>
+        <p>Men&apos;s Fashion</p>
         <LiaGreaterThanSolid className='mt-1 font-bold'  />
         </div>
         
@@ -68,7 +68,7 @@ const Home = () => {
         <p>Home & lifestyle</p>
         <p>Medicine</p>
         <p>Sports & Outdoor</p>
-        <p>Baby's & Toys</p>
+        <p>Baby&apos;s & Toys</p>
         <p>Groceries & Pets</p>
         <p>Health & Beauty</p>
         </div>
@@ -111,7 +111,7 @@ const Home = () => {
 
     <div className='px-16 m-1'>
          <div className='bg-red-600 w-5 h-10  rounded flex mb-2 '>
-         <h2 className='ml-12 text-red-600 mt-1 font-bold'>Today's</h2>
+         <h2 className='ml-12 text-red-600 mt-1 font-bold'>Today&apos;s</h2>
              </div> 
 
              <div className='flex gap-10'>
@@ -911,7 +911,7 @@ const Home = () => {
               <div>
               <div className='flex  bg-neutral-950 w-full '>
                 <div className=' text-white ml-6 mt-20 '>
-                 <h1 className='text-2xl font-bold mb-2'>Women's Collections</h1>
+                 <h1 className='text-2xl font-bold mb-2'>Women&apos;s Collections</h1>
                  <p className='text-sm'>Featured woman collections that<br/> gives you another vibe.</p>
                  <a href='#' className='inline-block text-sm font-semibold text-white underline mt-2 mb-4'>Shop Now</a>
 
@@ -1008,7 +1008,7 @@ const Home = () => {
   <input 
     type="text" 
     placeholder="Enter your email" 
-    className="w-full pr-6 pl-4 py-2 border rounded mt-2 text-black"
+    className="w-full pr-6 pl-4 py-2 border rounded mt-2 text-white bg-black"
   />
   <IoMdSend className="absolute inset-y-5 right-3 flex items-center text-gray-500 " />
 </div>
@@ -1039,56 +1039,65 @@ const Home = () => {
         </div>
         <div className='mt-12'>
             <h1 className='font-bold text-sm'>Download App</h1>
-            <p  className='mt-2 text-xs'>Save $3 with App New User City</p>
+            <p  className='mt-2 mb-2 text-xs'>Save $3 with App New User City</p>
 
             <div className='flex gap-3'>         
             <BsQrCodeScan className='text-8xl mt-2' />
 
-          
-
-            <div className="">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-      alt="Google Play"
-      className="w-32 h-32"
-    /> 
-
-    <div className=" ">
+            <div className="flex flex-col items-center gap-4">
+ 
   <a
     href="#"
-    className="flex items-center gap-2 px-1 border border-white rounded bg-black "
+    className="flex items-center gap-2 px-2 py-1 border border-white rounded bg-black"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512"
+      className="w-8 h-8 fill-white"
+    >
+      <path d="M325.3 234.3 104.4 31.9C95.3 24.5 84.4 22.7 74.7 25.8 62.9 30 56 41.8 56 55v402c0 13.2 6.9 25 18.7 29.2 9.7 3.2 20.6 1.3 29.7-6.1l220.9-202.4c16.3-14.9 16.3-41.1 0-56.4zM374.2 208l-24.3 19.8-67.9 62.3 67.9 62.3 24.3 19.8c20.5-17.5 66.2-56.7 93.8-80.3 7.8-6.7 11.7-15.7 11.7-25.8 0-10.1-3.9-19.1-11.7-25.8-27.5-23.6-73.2-62.8-93.8-80.3z" />
+    </svg>
+    <div className="text-left">
+      <span className="block text-xs text-white">Get it on</span>
+      <span className="block text-sm font-semibold text-white">Google Play</span>
+    </div>
+  </a>
+
+  <a
+    href="#"
+    className="flex items-center gap-2 px-2 py-1 border border-white rounded bg-black"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 384 512"
-      className="w-8 h-8 fill-white" 
+      className="w-8 h-8 fill-white"
     >
       <path
         d="M318.7 268c-.4-37 16.3-64.7 50.3-85.2-19.6-28.6-49.3-44.8-86-49.4-36-4.5-76.1 21.5-89 21.5-13.1 0-49.7-20.8-75.8-20.8-55 0-114.2 40.5-114.2 116.2 0 36.2 13.4 74.2 40 106.8 21.5 27.5 47.1 58.3 81.4 57 32.3-1.3 44.7-20.9 83.4-20.9 38.6 0 49.6 20.9 83.7 20.4 35.1-.6 57.3-28 78.6-55.4 13.8-18.5 19.5-28.1 30.6-49.2-80.4-30.7-76.8-89.6-77.3-91.1zM244.8 0c-20.2 2.5-43.7 14.5-57.6 31.7-12.6 15.8-24.4 40.7-21.2 64.5 23.3 1.8 47.1-12 61-29.7 13.7-17.4 23.7-40.9 18.2-66.5z"
       />
     </svg>
     <div className="text-left">
-      <span className="block text-xs text-white ">Download on the</span>
+      <span className="block text-xs text-white">Download on the</span>
       <span className="block text-sm font-semibold text-white">App Store</span>
     </div>
   </a>
-  
 </div>
 
+
+           
+  </div>
+</div>
+</div>
       
-<div className='flex gap-3 text-2xl mt-2'>
+<div className='flex gap-3 justify-end items-end text-2xl w-full  px-24  bg-black text-white'>
       <TiSocialFacebook />
       <RiTwitterLine />
       <IoLogoInstagram />
       <FaLinkedinIn />     
       </div>
-</div>
-     
-    </div>
-        
-  </div>
-            
-        </div>
+
+    
+  <hr/>
        <div className='flex bg-black text-white items-center justify-center'>
        <FaRegCopyright   className='m-1'/>
         <p className='text-xs'> Copyright Rimel 2022.All right reserved</p>
