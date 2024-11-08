@@ -19,31 +19,29 @@ import { TiSocialFacebook } from 'react-icons/ti';
 
 const Home = () => {
   return (
-    <div>
-        <div className='flex justify-center bg-black text-white font-thin p-1 '>
-            <p>Summer Sole For All Suits And Free Express Delivery - OFF 50%!  <a href='#' >Shop Now</a></p>
-            <div className='flex ml-48'>
-                <p>Englsh</p>
+    <div className='overflow-x-hidden'>
+        <div className='flex text-xs lg:text-sm gap-2 lg:flex justify-evenly bg-black text-white  p-2  md:text-sm  '>
+            <p className=''>Summer Sole For All Suits And Free Express Delivery - OFF 50%!  <a href='#' className='underline'>Shop Now</a></p>
+            <div className=' flex'>
+                <p>English</p>
                 <FaAngleDown  className='m-1'/>
             </div>
             
         </div>
-        <div className='p-5 flex justify-evenly'>
+        <div className='gap-2 text-sm p-4 lg:p-5 lg:text-sm flex justify-evenly sm:p-2 sm:grid-cols-1 sm:text-sm '>
             <h1 className='font-bold'>Exclusive</h1>
                 <ul className='flex gap-8'>
                     <li><a href='#' className='underline'>Home</a></li>
-                    <li>Contact</li>
-                    <li>About</li>
-                    <li>Sign-Up</li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href='#'>About</a></li>
+                     <li><a href="#">Sign-Up</a></li>
                     
                 </ul>
-                <div className='flex gap-3'>
-                    <button className='flex items-center space-x-4 gap-10 px-1 py-1 bg-neutral-200 text-black rounded  '>What are you looking for? <IoIosSearch className='' /></button>
-                    <div className='flex m-2  space-x-4'>
+                <div className='flex gap-3 '>
+                    <button className='hidden lg:flex lg:py-2 px-2 items-center space-x-4 gap-10  bg-neutral-200 text-black rounded '>What are you looking for? <IoIosSearch className='' /></button>
+                    <div className='flex m-1  space-x-4'>
                     <PiHeartStraightThin />
                     <IoCartOutline />
-
-
                     </div>
                    
                    
@@ -53,15 +51,15 @@ const Home = () => {
 
     <hr />
 
-    <div className='flex justify-around m-7 text-sm font-bold '>
-        <div className='gap-2'>
-            <div className='flex gap-10 '>
+    <div className=' m-6  lg:flex-row lg:justify-evenly lg:text-sm font-bold flex flex-col sm:items-center '>
+        <div className='pl-12  gap-2 grid grid-cols-2 md:ml-2 sm:mt-8 sm:grid-cols-3 sm:gap-8 lg:flex lg:flex-col '>    
+            <div className=' gap-10 lg:flex '>
             <p>Woman&apos;s Fashion</p>
-            <LiaGreaterThanSolid className='mt-1 font-bold ' />
+            <LiaGreaterThanSolid className='hidden lg:flex font-bold sm:hidden' />
             </div>
         <div className='flex gap-10 '>
         <p>Men&apos;s Fashion</p>
-        <LiaGreaterThanSolid className='mt-1 font-bold'  />
+        <LiaGreaterThanSolid className='hidden lg:flex items-center mt-1 font-bold sm:hidden'  />
         </div>
         
         <p>Electronics</p>
@@ -72,22 +70,22 @@ const Home = () => {
         <p>Groceries & Pets</p>
         <p>Health & Beauty</p>
         </div>
-        <div className='h-2 w-1'>
+        <div className='hidden lg:flex h-42 w-1  sm:hidden'>
         <Image src={'/images/Line 4.png'} alt='line' width={3} height={1} className='h-56 '/>
         </div>
         
 
-        <div className='flex bg-black h-60 mr-40 text-white w-6/12 '>
+        <div className='flex w-full  lg:flex lg:w-[60%] lg:h-[50%] bg-black h-60 mr-40 text-white  sm:w-11/12 sm:m-10 '>
         
 
-        <div className='w-80 p-6'>
-           <div className=' flex gap-2'>
-           <AiOutlineApple className=' text-6xl  ' />
-           <p className='mt-4 '>iphone 14 Series</p>
+        <div className='w-80 p-6 lg:w-96 sm:w-full' >
+           <div className=' flex gap-2  md:gap-2 sm:text-xs '>
+           <AiOutlineApple className=' text-6xl  md:text-6xl ' />
+           <p className='mt-4 text-sm lg:mt-4 font-thin md:mt-5 md:text-sm sm:mt-6'>iphone 14 Series</p>
            </div>
 
-           <h1 className='text-3xl font-bold p-2'>Up to 10%</h1>
-           <h1  className='text-3xl font-bold p-2'>off Voucher</h1>
+           <h1 className='text-xl lg:text-3xl lg:font-bold lg: p-2 md:text-3xl sm:text-2xl'>Up to 10%</h1>
+           <h1  className='text-xl lg:text-3xl lg:font-bold lg:p-2 md:text-3xl sm:text-2xl'>off Voucher</h1>
 
            <div className='flex gap-2 p-2'>
            <a href='#' className='underline'>Shop Now</a>
@@ -100,7 +98,7 @@ const Home = () => {
              
            <div className=''>
            <Image src={'/images/hero_endframe.png'} alt='image' height={25} width={300} className='h-56'/>
-           <div className='flex justify-left text-2xl  ' >
+           <div className='flex justify-left text-2xl ' >
            <RxBorderDotted />
            </div>
             
@@ -118,19 +116,19 @@ const Home = () => {
                 <h1 className='font-bold text-2xl'>Flash Sales</h1>
                 <div>
                    <p  className='text-sm font-bold' >Days</p>
-                   <h1 className='font-bold text-3xl'>03 <span className='text-red-500 ml-5'>:</span></h1>
+                   <h1 className='font-bold text-3xl'>03 <span className='hidden text-red-500 ml-5 sm:hidden'>:</span></h1>
                    
                 </div>
 
                 <div>
                    <p className='text-sm font-bold'>Hours</p>
-                   <h1 className='font-bold text-3xl'>23 <span className='text-red-500 ml-5'>:</span> </h1>
+                   <h1 className='font-bold text-3xl'>23 <span className='hidden text-red-500 ml-5 sm:hidden'>:</span> </h1>
                    
                 </div>
 
                 <div>
                    <p className='text-sm font-bold'>Mintues</p>
-                   <h1 className='font-bold text-3xl'>19 <span className='text-red-500 ml-5'>:</span></h1>
+                   <h1 className='font-bold text-3xl'>19 <span className='hidden text-red-500 ml-5 sm:hidden'>:</span></h1>
                    
                 </div>
 
@@ -140,11 +138,11 @@ const Home = () => {
                    
                 </div>
 
-                <div className='flex items-center space-x-2 ml-auto '>
-                    <div className='bg-zinc-200   rounded-full p-2'>
+                <div className='flex items-center space-x-2 ml-auto  '>
+                    <div className='bg-zinc-200  sm:flex hidden rounded-full p-2'>
                     <FaArrowLeftLong  />
                     </div>
-                <div className='bg-zinc-200   rounded-full p-2' >
+                <div className='bg-zinc-200 sm:flex hidden  rounded-full p-2' >
                 <FaArrowRightLong />
                 </div>
                 
@@ -152,17 +150,17 @@ const Home = () => {
                 </div>
                   
                
-              <div className='flex justify-between mt-10 ' >
+              <div className='mt-10 grid grid-cols-1 gap-24 md:grid-cols-2   md:gap-4 lg:flex sm:grid-cols-2' >
              
 
 
-<div className="w-60 bg-gray-100 rounded-lg p-6 h-48 relative">
-      {/* Discount Badge */}
+<div className="w-60 bg-gray-100 rounded-lg p-6 h-48 relative sm:mb-28 ">
+      
       <div className="absolute top-3 left-3 bg-red-500 text-white text-sm font-semibold px-2 py-1 rounded">
         -40%
       </div>
 
-      {/* Icons */}
+    
       <div className="absolute top-3 right-3 space-y-2">
         <div className="bg-white rounded-full p-2 shadow">
           <IoMdHeartEmpty className="text-xl" />
@@ -197,7 +195,7 @@ const Home = () => {
 
                
                   
-               <div className="w-60 bg-gray-100 rounded-lg p-6 h-48 relative">
+               <div className="w-60 bg-gray-100 rounded-lg p-6 h-48 relative ">
      
       <div className="absolute top-3 left-3 bg-red-500 text-white text-sm font-semibold px-2 py-1 rounded">
         -35%
@@ -239,7 +237,7 @@ const Home = () => {
     
          </div>
 
-<div className="w-60 bg-gray-100 rounded-lg p-6 h-48 relative">
+<div className="w-60 bg-gray-100 rounded-lg p-6 h-48 relative ">
   
       <div className="absolute top-3 left-3 bg-red-500 text-white text-sm font-semibold px-2 py-1 rounded">
         -30%
@@ -279,7 +277,7 @@ const Home = () => {
 
 
                     
-<div className="w-60 bg-gray-100 rounded-lg p-6 h-48 relative">
+<div className="w-60 bg-gray-100 rounded-lg p-6 h-48 relative ">
   
       <div className="absolute top-3 left-3 bg-red-500 text-white text-sm font-semibold px-2 py-1 rounded">
         -25%
@@ -320,17 +318,17 @@ const Home = () => {
                     </div>
          
                     <div className='flex items-center justify-center'>
-                    <button className='bg-red-500 rounded text-white px-10 py-2 m-36'>View All Products</button>
+                    <button className='bg-red-500 rounded text-white px-10 sm:py-4 m-36'>View All Products</button>
                     </div>
 
-                    <hr className='mb-12' />
+                    <hr className='mb-12 md:mb-6' />
                     
                  
                   
                    
     </div>
 
-    <div className='px-16 mt-2'>
+    <div className='px-16 mt-2 '>
          <div className='bg-red-600 w-5 h-10  rounded flex mb-2 '>
          <h2 className='ml-12 text-red-600 mt-1 font-bold'>Categories</h2>
              </div> 
@@ -339,7 +337,7 @@ const Home = () => {
             <div className='flex'>
                <h1 className='font-bold text-2xl'>Browse By Category</h1>
 
-               <div className='flex items-center space-x-2 ml-auto '>
+               <div className='hidden lg:flex md:flex items-center space-x-2 ml-auto '>
                     <div className='bg-zinc-200   rounded-full p-2'>
                     <FaArrowLeftLong  />
                     </div>
@@ -352,7 +350,7 @@ const Home = () => {
                 
             </div>
 
-            <div className='flex justify-between mt-4'>
+            <div className=' grid-cols-2 justify-between mt-4 grid md:grid-cols-3 gap-2 items-center sm:grid-cols-2 lg:flex'>
                   <div className='border border-b py-2 px-8 bg-transparent  '>
                   <FiSmartphone className='m-3 text-2xl' />
                   <p>Phones</p>
@@ -401,7 +399,7 @@ const Home = () => {
             </div>
              
                     
-    <div className='flex justify-between  m-3'>         
+    <div className='grid justify-between gap-20 m-3 md:grid-cols-3 md:gap-20 lg:flex sm:grid-cols-2 sm:gap-20'>         
     <div className="w-48 h-48 bg-gray-100 rounded-lg p-4 relative">
       
       <div className="absolute top-3 right-3 space-y-2">
@@ -530,26 +528,26 @@ const Home = () => {
     </div>
 
             </div>
-            <div className= ' flex justify-around p-16 mt-24 '>
-         <div className='text-white bg-black w-4/6 '> 
+            <div className= ' flex  justify-around p-16 mt-24 '>
+         <div className='text-white bg-black w-4/6  sm:w-[90%]'> 
           <p className='text-green-400 mb-4 mt-8 ml-8 font-bold'>Categories</p>    
           <h1 className='ml-8 font-bold text-4xl '>Enhance Your</h1>
           <h1 className='ml-8 font-bold text-4xl'>Music Experience</h1>
           <div className='flex gap-3 mt-4 ml-8'>
-            <div className=' bg-white text-black rounded-full  '>
+            <div className=' bg-white text-black rounded-full  md:text-xs md:rounded-2xl sm:text-xs sm:text-center'>
              <h2 className='px-4 '>23</h2>
-            <p>Hours</p>
+            <p className='md:text-center'>Hours</p>
              </div>
-             <div className='text-sm text-black  bg-white rounded-full'>
+             <div className='text-sm text-black  bg-white rounded-full md:text-xs md:rounded-2xl sm:text-xs sm:text-center'>
              <h2 className='px-4'>05</h2>
             <p className='text-center'>Days</p>
              </div>
-             <div className='text-sm  bg-white text-black rounded-full'>
-             <h2 className='px-4 text-center'>59</h2>
+             <div className='text-sm  bg-white text-black rounded-full md:text-xs sm:text-xs sm:text-center'>
+             <h2 className='px-4 text-center md:rounded-r-2xl'>59</h2>
             <p>Minutes</p>
              </div>
-             <div className='text-sm  bg-white text-black rounded-full'>
-             <h2 className='px-3 text-center'>35</h2>
+             <div className=' lg:text-sm lg:text-center  bg-white text-black rounded-full md:text-xs md:rounded-2xl sm:text-xs sm:text-center '>
+             <h2 className= 'px-3 text-center md:text-xs'>35</h2>
             <p>Seconds</p>
              </div>
              
@@ -558,9 +556,9 @@ const Home = () => {
           <button className=' mt-8 bg-green-400 text-white px-3 py-2 rounded text-center ml-8 mb-8'>Buy Now!</button>
          </div>
          
-         <div className=' bg-gradient-to-r from-black via-black/50 to-gray-900 w-4/6
+         <div className='bg-gradient-to-r from-black via-black/50 to-gray-900 w-4/6 md:w-2/3 
              '>
-         <Image src={'/images/jambox.png'} alt='jambox' width={400} height={300} className=' mix-blend-overlay mt-12 ml-24'/>
+         <Image src={'/images/jambox.png'} alt='jambox' width={400} height={300} className='hidden lg:flex lg:w-80 mix-blend-overlay mt-12 ml-24 md:ml-1 md:flex sm:ml-1 sm:mt-24 sm:flex sm:w-[13rem]'/>
          </div>
          
         </div>
@@ -574,7 +572,7 @@ const Home = () => {
             <div className='flex'>
                <h1 className='font-bold text-2xl'>Explore Our Products</h1>
 
-               <div className='flex items-center space-x-2 ml-auto '>
+               <div className=' hidden lg:flex md:flex sm:flex items-center space-x-2 ml-auto '>
                     <div className='bg-zinc-200   rounded-full p-2'>
                     <FaArrowLeftLong  />
                     </div>
@@ -586,7 +584,7 @@ const Home = () => {
                 
                 </div>
             </div>
-           <div className='flex justify-between mt-12'>
+           <div className='grid justify-between grid-cols-1 gap-28 mt-12 lg:grid-cols-4 md:grid-cols-3 md:gap-28 sm:grid-cols-2 sm:gap-28'>
                 
             <div className="w-48 h-48 bg-gray-100 rounded-lg p-4 relative">
       
@@ -724,8 +722,8 @@ const Home = () => {
 
 
 
- <div className="flex mt-32 justify-center gap-32">
-  <div className="w-50 bg-gray-100 rounded-lg p-6 h-48 relative">
+ <div className="grid mt-32 justify-center m-10 mr-44 gap-36  lg:grid-cols-4 md:grid-cols-3 md: md:mr-8 sm:grid-cols-2 sm:p-8">
+  <div className="w-50 bg-gray-100 rounded-lg p-6 h-48 relative md:w-[12rem] ">
     <div className="absolute top-3 left-3 bg-green-500 text-white text-sm font-semibold px-2 py-1 rounded">
       NEW
     </div>
@@ -737,7 +735,7 @@ const Home = () => {
         <TbEye className="text-xl" />
       </div>
     </div>
-    <div className="flex justify-center mt-6">
+    <div className="flex justify-center mt-6 md:mt-8 ">
       <Image
         src="/images/toy-car.png"
         alt="car"
@@ -887,7 +885,7 @@ const Home = () => {
  
 </div>
 <div className='flex justify-center items-center'>
-<button className='bg-red-500 rounded text-white px-10 py-2 m-36'>View All Products</button>
+<button className='bg-red-500 rounded text-white px-8 py-2 lg:px-10 lg:py-2 md:px-10 md:py-2 sm:px-10 sm:py-2 m-36'>View All Products</button>
 </div>
 
 <div className='px-16'>
@@ -896,7 +894,7 @@ const Home = () => {
              </div> 
             <h2 className='text-2xl font-bold mb-2'>New Arrival</h2>
              
-             <div className='flex  justify-around'>
+             <div className='flex flex-col justify-around md:flex gap-4  sm:flex-col lg:flex-row'>
               <div className='relative bg-black w-96 h-2/4'>
 
                 <Image src={'/images/speakers.png'} alt='speakers' width={300} height={200} className='class="object-cover w-full h-full rounded-lg'/>
@@ -909,14 +907,14 @@ const Home = () => {
               </div>
               </div>
               <div>
-              <div className='flex  bg-neutral-950 w-full '>
-                <div className=' text-white ml-6 mt-20 '>
-                 <h1 className='text-2xl font-bold mb-2'>Women&apos;s Collections</h1>
-                 <p className='text-sm'>Featured woman collections that<br/> gives you another vibe.</p>
-                 <a href='#' className='inline-block text-sm font-semibold text-white underline mt-2 mb-4'>Shop Now</a>
+              <div className='flex  bg-neutral-950 w-full h-56  '>
+                <div className=' text-white ml-6 mt-20 md:mt-10'>
+                 <h1 className='text-2xl font-bold mb-2 lg:mt-12 md:mt-4'>Women&apos;s Collections</h1>
+                 <p className='text-xs md:w-60 md:mt-8 sm:w-30 lg:w-60 lg:mt-6 lg:text-sm md:text-sm sm:text-sm '>Featured woman collections that<br/> gives you another vibe.</p>
+                 <a href='#' className='inline-block text-xs lg:text-sm sm:text-sm md:text-sm font-semibold text-white underline mt-2 mb-4'>Shop Now</a>
 
                 </div>
-                <div className=' '>
+                <div className='md:w-full md:mt-4 lg:mt-4  mt-20 w-full sm:w-80 sm:mt-8'>
                    <Image src={'/images/attractive-woman.png'} alt='woman' width={300} height={300} className='object-cover'/>
                 </div>
               </div> 
@@ -948,7 +946,7 @@ const Home = () => {
             </div>  
             </div>
 
-             <div className='flex justify-evenly  items-center mt-12  '>
+             <div className=' flex justify-evenly  items-center mt-12  '>
              <div className="relative w-10 h-10 rounded-full bg- flex items-center justify-center bg-neutral-400">
     <div className="w-7 h-7 rounded-full bg-black flex items-center justify-center">
       <div className="w-6 h-6 rounded-full text-white flex items-center justify-center">
@@ -999,7 +997,7 @@ const Home = () => {
       <div className='bg-red-600 text-white w-10 rounded-full h-10 flex items-center justify-center'>
       <FaArrowUp className='flex ' />
       </div>
-       <div className='flex justify-evenly bg-black text-white '>
+       <div className='grid grid-cols-2 p-6 lg:flex lg:justify-evenly lg:p-2 bg-black text-white md:grid-cols-3 md:p-12 sm:grid-cols-3 sm:p-10 sm:gap-12'>
           <div className='mt-12'>
             <h1 className='font-bold'>Exclusive</h1>
             <p  className='mt-2 font-bold'>Subscribe</p>
@@ -1037,12 +1035,12 @@ const Home = () => {
         <p  className='mt-2 text-sm'>FAQ</p>
         <p className='mt-2 text-sm' >Contact</p>
         </div>
-        <div className='mt-12'>
+        <div className='mt-12 '>
             <h1 className='font-bold text-sm'>Download App</h1>
             <p  className='mt-2 mb-2 text-xs'>Save $3 with App New User City</p>
 
-            <div className='flex gap-3'>         
-            <BsQrCodeScan className='text-8xl mt-2' />
+            <div className='flex gap-3 sm:grid grid-cols-2 sm:gap-36 lg:flex lg:gap-2'>         
+            <BsQrCodeScan className='text-8xl mt-2 ' />
 
             <div className="flex flex-col items-center gap-4">
  
@@ -1059,7 +1057,7 @@ const Home = () => {
     </svg>
     <div className="text-left">
       <span className="block text-xs text-white">Get it on</span>
-      <span className="block text-sm font-semibold text-white">Google Play</span>
+      <span className="block text-sm font-semibold text-white ">Google Play</span>
     </div>
   </a>
 
@@ -1089,7 +1087,7 @@ const Home = () => {
 </div>
 </div>
       
-<div className='flex gap-3 justify-end items-end text-2xl w-full  px-24  bg-black text-white'>
+<div className='flex gap-3 justify-start items-strat text-2xl w-full  px-24  bg-black text-white md:flex md:justify-center md:items-center sm:flex sm:justify-center sm:items-center lg:flex lg:justify-end'>
       <TiSocialFacebook />
       <RiTwitterLine />
       <IoLogoInstagram />
