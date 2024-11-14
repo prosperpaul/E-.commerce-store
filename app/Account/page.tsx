@@ -2,15 +2,17 @@ import Home from '@/app/Home/pages'
 
 import React from 'react'
 
-
-
-const HomePage = () => {
+const Account = () => {
   return (
     <div>
+
+
       <Home/>
-    
+      {/* <Navbar/> */}
+      
+     
     </div>
   )
 }
 
-export default HomePage
+export default Account
